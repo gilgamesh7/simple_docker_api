@@ -35,7 +35,7 @@ def read_item(channel_id: str)-> Channel:
     
     return channels[channel_id]
 
-# Equivalent of 
+# Equivalent of below, for local running
 # uvicorn main:app --host 127.0.0.1 --port 8080 --reload
-if __name__ == "__main__":
-    uvicorn.run(app, host="127.0.0.1", port=8080)
+# if __name__ == "__main__":
+#     uvicorn.run(app, host="127.0.0.1", port=8080)
