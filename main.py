@@ -26,7 +26,7 @@ with open("channels.json", encoding="utf-8") as file:
 
 @app.get("/")
 def read_root()-> Response:
-    return Response("The server is running")
+    return Response("The server is running !")
 
 @app.get("/channels/{channel_id}", response_model=Channel)
 def read_item(channel_id: str)-> Channel:
